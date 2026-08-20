@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08080d">
+<meta name="description" content="Alpha Shop - فروش اشتراک و خدمات دیجیتال">
+<title>Alpha Shop | فروشگاه دیجیتال</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+
+<header class="topbar">
+  <a class="brand" href="#"><span>ALPHA</span> SHOP</a>
+  <div class="top-actions">
+    <a href="https://t.me/AlphaShopSupport" target="_blank">پشتیبانی</a>
+    <button class="theme-btn" id="themeBtn" aria-label="تغییر حالت">☼</button>
+  </div>
+</header>
+
+<main>
+<section class="hero container">
+  <div class="hero-copy">
+    <div class="badge">ALPHA SHOP</div>
+    <h1>خدمات دیجیتال،<br><strong>سریع و مطمئن</strong></h1>
+    <p>اشتراک‌ها و سرویس‌های آلفا شاپ را انتخاب کنید و جزئیات هر محصول را قبل از خرید ببینید.</p>
+    <div class="hero-buttons">
+      <button onclick="openModal('multi')">مشاهده سرویس‌ها</button>
+      <a href="https://t.me/AlphaShopUserBot" target="_blank">ورود به بات</a>
+    </div>
+  </div>
+  <div class="hero-art"><div class="orb"></div><div class="hero-logo">A</div><div class="scan">ALPHA SHOP</div></div>
+</section>
+
+<section class="container section">
+  <div class="section-head"><div><span>STORE</span><h2>محصولات آلفا شاپ</h2></div><p>برای مشاهده پلن‌ها روی هر محصول بزنید.</p></div>
+  <div class="products">
+
+    <article class="card" onclick="openModal('multi')">
+      <div class="art multi"><span>⚡</span><small>MULTI LOCATION</small></div>
+      <div class="card-body"><h3>سرورهای مولتی‌لوکیشن آلفا شاپ</h3><p>انتخاب حجم و خرید اشتراک سرورهای چندلوکیشنی.</p><button>مشاهده پلن‌ها</button></div>
+    </article>
+
+    <article class="card" onclick="openModal('gemini')">
+      <div class="art gemini"><span>✦</span><small>GEMINI PRO</small></div>
+      <div class="card-body"><h3>اشتراک Gemini Pro</h3><p>اشتراک یک‌ماهه با گارانتی کامل و فعال‌سازی روی اکانت شخصی.</p><button>مشاهده و خرید</button></div>
+    </article>
+
+    <article class="card" onclick="openModal('telegram')">
+      <div class="art telegram"><span>✈</span><small>TELEGRAM PREMIUM</small></div>
+      <div class="card-body"><h3>Telegram Premium</h3><p>پلن‌های یک‌ماهه و دوماهه با فعال‌سازی روی اکانت شخصی.</p><button>مشاهده و خرید</button></div>
+    </article>
+
+    <article class="card" onclick="openModal('chatgpt')">
+      <div class="art chatgpt"><span>◎</span><small>CHATGPT PLUS</small></div>
+      <div class="card-body"><h3>ChatGPT Plus</h3><p>این محصول در حال حاضر در دسترس نیست.</p><button class="disabled">فعلاً ناموجود</button></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="trust container">
+  <div><b>⚡ خرید سریع</b><span>مسیر ساده و شفاف</span></div>
+  <div><b>🛡 پشتیبانی</b><span>پاسخگویی مستقیم</span></div>
+  <div><b>🔐 امنیت</b><span>حفظ اطلاعات مشتری</span></div>
+</section>
+</main>
+
+<footer><span>© Alpha Shop</span><a href="https://t.me/AlphaShopSupport" target="_blank">@AlphaShopSupport</a></footer>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
